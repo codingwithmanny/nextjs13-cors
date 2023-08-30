@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client-Side Tests For NextJS Cors</title>
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Client-Side Application Testing Cors</h1>
+
+      <h2>GET</h2>
+
+      <form id="form-get">
+        <button type="submit">Submit</button>
+      </form>
+
+      <pre
+        style="
+          width: 500px;
+          height: 400px;
+          background: #efefef;
+          overflow: scroll;
+        "
+      ><code id="result-get"></code></pre>
+
+      <hr />
+
+      <h2>POST</h2>
+
+      <form id="form-post">
+        <div>
+          <label for="payload" style="display: block; margin: 0px 0px 10px 0px;">JSON Payload</label>
+          <textarea rows="10" name="payload" id="payload"></textarea>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <pre
+        style="
+          width: 500px;
+          height: 400px;
+          background: #efefef;
+          overflow: scroll;
+        "
+      ><code id="result-post"></code></pre>
+    </main>
+  </body>
+</html>
