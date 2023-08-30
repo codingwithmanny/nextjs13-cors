@@ -4,6 +4,12 @@ A simple example of how to configure CORS in a NextJS 13 app using AppRouter.
 
 ---
 
+## Tutorial
+
+This repo is part of tutorial article. You can find the Medium article here: [NextJS 13 AppRouter Tutorial](TBD)
+
+---
+
 ## Getting Started
 
 ### Prerequisites
@@ -34,3 +40,23 @@ pnpm dev
 
 pnpm client
 ```
+
+---
+
+## CORS Configurations
+
+### Option 1 - NextJS Config
+
+You can find those cors configurations in `next.config.js`.
+
+### Option 2 - Route Handler
+
+You can find those cors configurations in `pages/api/users/route.ts`.
+
+### Option 3 - Middleware CORS Configurations
+
+You can find those cors configurations in `middleware.ts`.
+
+---
+
+built by [@codingwithmanny](https://www.x.com/codingwithmanny)
