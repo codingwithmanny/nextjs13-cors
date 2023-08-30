@@ -6,7 +6,11 @@ A simple example of how to configure CORS in a NextJS 13 app using AppRouter.
 
 ## Tutorial
 
-This repo is part of tutorial article. You can find the Medium article here: [NextJS 13 AppRouter Tutorial](TBD)
+This repo is part of tutorial article. You can find the Medium article here: [NextJS 13 AppRouter Tutorial]([TBD](https://codingwithmanny.medium.com/3-ways-to-configure-cors-for-nextjs-13-app-router-api-route-handlers-427e10929818))
+
+[![NextJS App Router Working With Cors](README/nextjs-cors-approuter.png)](https://codingwithmanny.medium.com/3-ways-to-configure-cors-for-nextjs-13-app-router-api-route-handlers-427e10929818)
+
+
 
 ---
 
