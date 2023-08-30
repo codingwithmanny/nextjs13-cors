@@ -27,18 +27,18 @@ export async function middleware(request: NextRequest) {
   // Response
   const response = NextResponse.next();
 
-//   // Allowed origins check
-//   const origin = request.headers.get('origin') ?? '';
-//   if (corsOptions.allowedOrigins.includes('*') || corsOptions.allowedOrigins.includes(origin)) {
-//     response.headers.set('Access-Control-Allow-Origin', origin);
-//   }
+  // Allowed origins check
+  const origin = request.headers.get('origin') ?? '';
+  if (corsOptions.allowedOrigins.includes('*') || corsOptions.allowedOrigins.includes(origin)) {
+    response.headers.set('Access-Control-Allow-Origin', origin);
+  }
 
-//   // Set default CORS headers
-//   response.headers.set("Access-Control-Allow-Credentials", corsOptions.credentials.toString());
-//   response.headers.set("Access-Control-Allow-Methods", corsOptions.allowedMethods.join(","));
-//   response.headers.set("Access-Control-Allow-Headers", corsOptions.allowedHeaders.join(","));
-//   response.headers.set("Access-Control-Expose-Headers", corsOptions.exposedHeaders.join(","));
-//   response.headers.set("Access-Control-Max-Age", corsOptions.maxAge?.toString() ?? "");
+  // Set default CORS headers
+  response.headers.set("Access-Control-Allow-Credentials", corsOptions.credentials.toString());
+  response.headers.set("Access-Control-Allow-Methods", corsOptions.allowedMethods.join(","));
+  response.headers.set("Access-Control-Allow-Headers", corsOptions.allowedHeaders.join(","));
+  response.headers.set("Access-Control-Expose-Headers", corsOptions.exposedHeaders.join(","));
+  response.headers.set("Access-Control-Max-Age", corsOptions.maxAge?.toString() ?? "");
 
   // Return
   return response;
